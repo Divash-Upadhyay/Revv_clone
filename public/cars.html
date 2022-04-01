@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/styles/cars.css" />
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      c#rossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="fi">
+    <div class="container22"></div>
+   
+      <!-- <div id="navbar"> -->
+        <!-- navbar -->
+      <!-- </div> -->
+      
+      <div id="modify_div">
+        <div>
+          <div id="first_div">
+            <div>
+              <i class="fas fa-map-marker-alt" id="location_ICON"></i>
+            </div>
+            <div>
+              <h3 class="city_location"></h3>
+            </div>
+          </div>
+          <div>
+            <p id="start_date126"></p>
+          </div>
+          <div>
+            <p id="end_date126"></p>
+          </div>
+          <div id="last_div126">
+            <!-- <a href="/index.html" -->
+            <a href="/index.html"
+              ><button id="modi_btn">Modify Search</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div id="fix">
+      
+        <div id="filters_main_bx">
+          <div id="filters_inner_bx">
+            <div>
+              <p>FILTERS</p>
+            </div>
+            <div>
+              <p>
+                Cars Rental in <b><span class="city"></span></b>
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" id="toggle" />
+                <span class="slider round"></span>
+              </label>
+              <div>
+                <p>
+                  Prices <b><span id="exclude">exclude</span> </b> fuel cost
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>Sort by:</p>
+              </div>
+              <div>
+                <select name="" id="select_126" size="1px">
+                  <option value="Popularity">Popularity</option>
+                  <option value="Low to High">Price:Low to High</option>
+                  <option value="High to Low">Price:High to Low</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main">
+          <div id="left">
+            <span
+              ><p><b>Segment</b></p></span
+            >
+            <input type="checkbox" id="hatchback" value="Hatchback" />
+            <label for="hatchback">Hatchback</label><br />
+            <input type="checkbox" id="sedan" value="Sedan" />
+            <label for="sedan">Sedan</label><br />
+            <input type="checkbox" id="suv" value="SUV" />
+            <label for="suv">SUV</label><br />
+            <input type="checkbox" id="muv" value="MUV" />
+            <label for="muv">MUV</label><br />
+
+            <!-- BRAND -->
+            <p>
+              <span><b>Brand</b></span>
+            </p>
+            <input type="checkbox" id="maruti" value="Maruti" />
+            <label for="maruti">Maruti</label><br />
+            <input type="checkbox" id="hyundai" value="Hyundai" />
+            <label for="hyundai">Hyundai</label><br />
+            <input type="checkbox" id="mahindra" value="Mahindra" />
+            <label for="mahindra">Mahindra</label><br />
+            <input type="checkbox" id="honda" value="Honda" />
+            <label for="honda">Honda</label><br />
+            <input type="checkbox" id="toyota" value="Toyota" />
+            <label for="toyota">Toyota</label><br />
+
+            <!-- fule type -->
+
+            <p>
+              <span><b>Fuel Type</b></span>
+            </p>
+            <input type="checkbox" id="diesel" value="Diesel" />
+            <label for="diesel">Diesel</label><br />
+            <input type="checkbox" id="petrol" value="Petrol" />
+            <label for="petrol">Petrol</label><br />
+
+            <!-- Transmission -->
+            <p>
+              <span><b>Transmission Type</b></span>
+            </p>
+            <input type="checkbox" id="automatic" value="Automatic" />
+            <label for="automatic">Automatic</label><br />
+            <input type="checkbox" id="manual" value="Manual" />
+            <label for="manual">Manual</label><br />
+
+            <!-- Capacity -->
+
+            <p>
+              <span><b>Seating Capacity</b></span>
+            </p>
+            <input type="checkbox" />
+            <label for="">5 Seat</label><br />
+            <input type="checkbox" />
+            <label for="">7 Seat</label><br />
+          </div>
+          <div id="right"></div>
+        </div>
+        <div class="container23"></div>
+      </div>
+    
+    <!-- <div></div> -->
+  </div>
+  </body>
+</html>
+
+<script src="./scripts/cars.js"></script>
+<script type="module">
+  import navbar from "./component/navbar.js";
+  let container22 = document.querySelector(".container22"); // for navbar reference:
+  container22.innerHTML = navbar();
+
+  import footer from "./component/footer.js";
+  let container23 = document.querySelector(".container23"); // for navbar reference:
+  container23.innerHTML = footer();
+
+
+  
+</script>
