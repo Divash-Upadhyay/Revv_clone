@@ -9,7 +9,7 @@ document.querySelector("#btn").addEventListener("click", login);
 
     login_Data = JSON.stringify(login_Data);
 
-    let login_url = "http://localhost:2345/login";
+    let login_url = "https://dbapptemp.herokuapp.com/login";
 
     let response = await fetch(login_url, {
       method: "POST",

@@ -18,9 +18,9 @@ async function Register(event) {
     console.log(er);
   }
 
-  let reg_api = `http://localhost:2345/register`;
+  // let reg_api = ``;
 
-  let response = await fetch(reg_api, {
+  let response = await fetch("https://dbapptemp.herokuapp.com/register", {
     method: "POST",
     body: Register_data,
     headers: {
@@ -29,8 +29,10 @@ async function Register(event) {
   });
   let data = await response.json();
   console.log(data);
-  if (data) {
-    alert("Registration Successfull");
+  if (data.errors) {
+    alert("Enter Valid Details");
+  }
+  else{
     window.location.href = "login.html";
   }
 }
